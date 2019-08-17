@@ -3,9 +3,11 @@
 <head>
 <title>Spring Boot Thyme App </title>
 <link rel="stylesheet" th:href="@{/css/student.css}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 </head>
 <body>
-<table>
+<div class="container">
+<table class="table table-bordered">
 <tbody>
 <thead>
 <tr>
@@ -20,5 +22,6 @@
 <td th:text="${stu.email}">
 </tbody>
 </table>
+</div>
 </body>
 </html>
