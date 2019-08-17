@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -cp target/classes:target/dependency/* ThymeprjApplication
+web:    java $JAVA_OPTS -cp target/classes:target/dependency/* ThymeprjApplication.java
