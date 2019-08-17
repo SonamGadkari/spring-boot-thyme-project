@@ -69,7 +69,7 @@
                 <configuration>
                     <artifactItems>
                         <artifactItem>
-                            <groupId>sonam.com.OnlineFoodStore</groupId>
+                            <groupId>com.springboot.thymeprj</groupId>
                             <artifactId>webapp-runner</artifactId>
                             <version>8.5.11.2</version>
                             <destFileName>webapp-runner.jar</destFileName>
