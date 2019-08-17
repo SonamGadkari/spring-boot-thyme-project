@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.springboot.thymeprj.model.Student;
@@ -37,5 +39,18 @@ public String allStudents(Model themodel)
 	List<Student> stuList=studentService.findAll();
 	themodel.addAttribute("students",stuList);
 	return "list-students";
+}
+@GetMapping("/showFormForAdd")
+public String showForm(Model themodel)
+{
+	themodel.addAttribute("student",new Student());	
+	return "showForm";
+}
+
+@PostMapping("/save")
+public String saveForm(@ModelAttribute("student") Student theStudent)
+{
+	studentService.save(theStudent);
+	return "redirect:/students/list";	
 }
 }
