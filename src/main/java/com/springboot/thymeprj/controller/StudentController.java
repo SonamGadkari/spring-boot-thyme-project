@@ -11,7 +11,7 @@ import com.springboot.thymeprj.model.Student;
 
 @Controller
 public class StudentController {
-@GetMapping("/hello")
+@GetMapping("/list")
 public String allStudents(Model themodel)
 {
 	Student stu= new Student(1,"Sonam","Gadekari","sonam.klu@gmail.com");
