@@ -1,0 +1,24 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleave.org">
+<head>
+<title>Spring Boot Thyme App </title>
+<link rel="stylesheet" th:href="@{/css/student.css}" />
+</head>
+<body>
+<table>
+<tbody>
+<thead>
+<tr>
+<th>Student FirstName</th>
+<th>Student LastName</th>
+<th>Student Email</th>
+</tr>
+</thead>
+<tr th:each="stu : ${students}">
+<td th:text="${stu.firstName}">
+<td th:text="${stu.lastName}">
+<td th:text="${stu.email}">
+</tbody>
+</table>
+</body>
+</html>
