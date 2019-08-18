@@ -25,6 +25,12 @@ public class StudentController {
 		this.studentService=studentService;
 	}
 	
+@GetMapping("/")
+	public String sayHello()
+	{
+		return "list-students";	
+	}
+	
 @GetMapping("/list")
 public String allStudents(Model themodel)
 {
