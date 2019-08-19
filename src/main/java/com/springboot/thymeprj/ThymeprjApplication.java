@@ -8,13 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @SpringBootApplication
-public class ThymeprjApplication {
-	
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-      return "Hello World!";
-    }
+public class ThymeprjApplication {	   
 
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeprjApplication.class, args);

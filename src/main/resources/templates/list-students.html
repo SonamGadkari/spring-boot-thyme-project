@@ -14,9 +14,9 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Add Students</a>
-      <a class="nav-item nav-link" href="#">List Students</a> 
-      <a class="nav-item nav-link" href="#">About me</a>     
+      <a class="nav-item nav-link" th:href="@{/students/showFormForAdd}">Add Students</a>
+      <a class="nav-item nav-link" th:href="@{/students/list}">List Students</a> 
+      <a class="nav-item nav-link" th:href="@{/students/aboutme}">About me</a>     
     </div>
   </div>
 </nav>
