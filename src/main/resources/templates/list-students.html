@@ -31,12 +31,18 @@
 <th>Student FirstName</th>
 <th>Student LastName</th>
 <th>Student Email</th>
+<th>Action</th>
 </tr>
 </thead>
 <tr th:each="stu : ${students}">
 <td th:text="${stu.firstName}">
 <td th:text="${stu.lastName}">
 <td th:text="${stu.email}">
+<td>
+<a class="btn btn-info" th:href="@{/students/showFormForUpdate(studentId=${stu.id})}">Update</a>
+<a class="btn btn-danger" th:href="@{/students/delete(studentId=${stu.id})}" 
+onclick="if(!(confirm('Confirm to delete'))) return true" >Delete</a>
+</td>
 </tbody>
 </table>
 </div>
