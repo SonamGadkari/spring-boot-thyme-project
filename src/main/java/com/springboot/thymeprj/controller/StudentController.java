@@ -72,4 +72,5 @@ public String deleteStudent(@RequestParam("studentId") int id, Model themodel)
 	return "redirect:/students/list";
 }
 
+
 }
