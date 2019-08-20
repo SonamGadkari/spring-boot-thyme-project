@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @SpringBootApplication
-public class ThymeprjApplication {	   
-
+public class ThymeprjApplication {	  
+		
+@RequestMapping("/")
+public String gethomepage()
+{
+	return "redirect:/students/list";
+}
 	public static void main(String[] args) {
 		SpringApplication.run(ThymeprjApplication.class, args);
 	}
